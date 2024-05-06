@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* .progress-bar{
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar__percent{
+    height: 100%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+} */
+
+/* display: inline nội dung như thế nào thì khối to như thế
+các phần tử inline thì sẽ cùng dòng, và không thể set width, height cho thẻ inline
+*/
+
+/* div{
+    display: inline;
+} */
+
+/* display: inline-block có chỉnh được width và height */
+
+/* sử dụng display: flex ở container bắt đầu từ trái qua phải
+những thằng nằm trong container thì phụ thuộc vào setup của thằng container */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+
+    /* align-items flex-end điểm kết thúc của trục phụ, flex-start là điểm bắt đầu của trục phụ */
+    align-items: center;
+
+    /* align-content giống như justify-content chỉ khác là align-content là theo trục phụ */
+
+}
+
+.item{
+    width: 20%;
+    height: 150px;
+    background-color: goldenrod;
+    margin: 5px;
+    text-align: center;
+    /* float: left; */
+}
+
+/* flex-direction xác định hướng main-axis để container sắp xếp các item
+row
+row-reverse
+column
+column-reverse */
+
+/* flex-wrap 
+nowrap các item sẽ cùng 1 dòng
+wrap khi kích thước của các item + lại > kích thước container bọc ngoài thì item sẽ tự động xuống dòng
+wrap-reverse ngược lại với wrap */
+
+/* flex-flow: row wrap (flex-flow: gộp 2 thuộc tính flex-direction và flex-wrap lại với nhau) */
+
+    </style>
+</head>
+<body>
+    <!-- <div class="progress-bar">
+
+        <div class="progress-bar__percent">
+
+        </div>
+        </div> -->
+        <!-- <span>Nội dung thẻ Span 1</span>
+        <span>Nội dung thẻ Span 2</span>
+        <div>Nội dung thẻ Div</div> -->
+    
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+
+        </div>
+
+
+
+
+
+
+</body>
+</html>

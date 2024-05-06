@@ -1,0 +1,28 @@
+.wrapper {
+    margin: 0 auto;
+    border: 1px solid cadetblue;
+    width: 35%;
+    padding: 30px;
+    background-color: lightcyan;
+}
+
+h1 {
+    margin: 0;
+    border: 2px solid salmon;
+    text-align: center;
+    padding: 5px;
+}
+
+p {
+    border: 2px solid lightseagreen;
+    padding: 10px;
+    background-color: azure;
+}
+
+button {
+    padding: 5px;
+    font-size: 16px;
+    background-color: lavenderblush;
+    border-radius: 8px;
+    outline: none;
+}

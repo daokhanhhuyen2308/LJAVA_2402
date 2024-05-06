@@ -1,0 +1,57 @@
+/* nếu như lớn hơn hoặc = 768 thì kích thước sẽ là màu nâu */
+@media (min-height: 768px){
+    body{
+        background-color: brown;
+    }
+}
+
+/* còn nếu kích thước nhỏ hơn hoặc bằng 512 thì sẽ là màu green */
+@media (max-wight: 512px){
+    body{
+        background-color: green;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+}
+
+.box-1{
+    background-color: lightcoral;
+}
+
+.box-2{
+    background-color: lightgreen;
+}
+
+.box-3{
+    background-color: lightsalmon;
+}
+
+@media (max-width: 768px){
+    .container{
+    align-items: center;
+    }
+
+    .box{
+        margin: 12px 0px;
+    }
+
+    .box-1{
+        order: 1;
+    }
+    
+    .box-2{
+        order: 2;
+    }
+    
+    .box-3{
+        order: 3;
+    }
+}

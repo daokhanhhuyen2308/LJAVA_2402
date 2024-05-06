@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-10</title>
+
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+    <!-- <h1 id="heading" style="color: brown;">Thẻ H1 theo id</h1> -->
+    <!-- <p id="heading">Thẻ p theo id</p>
+    <h1 class="heading">Thẻ H1 theo class</h1>
+    <h1 >Thẻ H1 theo tag name</h1> -->
+    <!-- <a href="https://youtube.com" id="tagA" data-id="1">Youtube</a> -->
+
+        <!-- <ul id="favorite-list">
+            <li class="favorite-list__item">My House</li>
+            <li class="favorite-list__item">BWN car</li>
+            <li class="favorite-list__item">Laptop</li>
+        </ul> -->
+<!-- 
+        <div id="tagDiv" class="container">
+            Đây là thẻ div
+        </div> -->
+
+        <input type="text" id="input" onclick="testEventChange()" /> 
+        <button id="mybutton" onclick="logger()">In ra màn hình</button>
+        <p id="display"></p>
+        <!-- <h1 id="message" style="display: none; color: red;">I love you baby &#10084;</h1> -->
+
+
+        <script>
+            //cách 1
+                        //gán trực tiếp
+                        // function logger() {
+                        //     alert('Have a nice day');
+                        // }
+                        // logger();
+
+            //cách 2
+            // document.getElementById("mybutton").onclick = function(){
+            //     alert('Have a nice day');
+            //}
+                    
+            //cách 3
+            // document.getElementById("mybutton").addEventListener("click", function(){
+            //     document.getElementById('message').style.display = "block";
+                
+            // })
+
+            // document.getElementById("mybutton").addEventListener("click", function(){
+            //     const text = document.getElementById('input').value;
+            //     document.getElementById('display').innerHTML = text;
+                
+            // });
+
+            function testEventChange(){
+                const text = document.getElementById('input').value;
+                document.getElementById('display').innerHTML = text;
+            }
+
+
+
+             
+
+        </script>
+
+    <!-- <script src="./examples.js"></script> -->
+    <!-- <script src="./scripts.js"></script> -->
+</body>
+</html>
